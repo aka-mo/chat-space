@@ -1,0 +1,24 @@
+.main_chat
+  .main_chat__group-info
+    .main_chat__group-info-left
+      .main_chat__group-info-name
+        %p.infoname test
+      .main_chat__group-info-member
+        %p.infomember Member : masa
+    .main_chat__group-info-right
+      .main_chat__group-info-edit
+        %p.edit Edit
+  .main_chat__message-list
+    .main_chat__message-list-contents
+      .main_chat__message-list-name
+        %p.message_left masa
+        %p.message_right 2019/09/09(Wed) 11:11:11
+      .main_chat__message-coments
+        %p おはよう
+  .main_chat__message-form
+    .input-box
+      %input.input-box__text{placeholder: "type a message", type: "text"}
+      %label.input-box__image
+        = icon('fas', 'image')
+        %input.input-box__image-file{type: "file"}
+    %input.submit-btn{type: "submit", value: "Send"}

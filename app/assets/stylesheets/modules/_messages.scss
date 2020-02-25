@@ -33,11 +33,12 @@ $main_chat_coler_Edit: #38aef0;
         text-align-last: right;
         &ul {
           display: flex;
-          list-style: none;
           right: 0;
-        }
         .fa-edit {
           margin-left: 5px;
+
+                  }
+
         }
       }
     }

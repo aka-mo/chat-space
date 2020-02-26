@@ -4,15 +4,17 @@
       = current_user.name
     .side_bar__user_name-right
       %ul
-        = link_to  do
-          %i.far.fa-edit
+        = link_to new_group_path do
+          %i.far.fa-edit 
         = link_to edit_user_path(current_user) do
           %i.fa.fa-cog
 
   .side_bar__group-list
-    .side_bar__group-list-contents
-      .side_bar__group-list-title
-        techcamp
-      .side_bar__group-list-message
-        コメント
+    - current_user.groups.each do |group|
+      .side_bar__group-list-contents
+        = link_to '#' do
+          .side_bar__group-list-title
+            = group.name
+          .side_bar__group-list-message
+            コメント
 

@@ -107,6 +107,7 @@ $main_chat_coler_Edit: #38aef0;
         }
       }
       &__message-list {
+        overflow: scroll;
         width: 100%;
         height: calc(100% - 190px);
         background-color: $main_chat_coler_center;

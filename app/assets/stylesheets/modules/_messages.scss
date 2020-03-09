@@ -48,6 +48,9 @@ $main_chat_coler_Edit: #38aef0;
       background-color: $side_ber_coler_bottom;
       &-contents {
         width: 100%;
+        a {
+          text-decoration: none;
+        }
       }
       &-title {
         font-size: 15px;
@@ -171,9 +174,23 @@ $main_chat_coler_Edit: #38aef0;
 
 .message {
   margin: 30px auto;
+  .upper-message {
+    display: flex;
+    &__user-name {
+      font-weight: bold;
+    }
+    &__date {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
 }
 .new_message {
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+
+.main_chat__group-info-edit > a {
+  text-decoration: none;
 }
